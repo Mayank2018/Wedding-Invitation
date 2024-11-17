@@ -10,11 +10,14 @@
             margin: 0;
             padding: 0;
             font-family: 'Merriweather', serif; /* Elegant serif font */
-            background: linear-gradient(180deg, #8b0000, #ff4500); /* Rich red gradient */
+            background: url('ganesh.jpg') no-repeat center center fixed; /* Add your background image URL */
+            background-size: cover; /* Ensures the image covers the screen */
             color: #fff8dc; /* Creamy white text for contrast */
             text-align: center;
             position: relative;
         }
+
+        /* Ensure content visibility over background */
         .content {
             position: relative;
             z-index: 2;
@@ -30,24 +33,16 @@
             text-shadow: 3px 3px 5px #8b0000; /* Subtle shadow for depth */
             margin-bottom: 20px;
         }
-        
-        h2 {
+
+        h2, h3 {
             font-family: 'Merriweather', serif; /* Elegant serif font */
-            font-size: 30px;
             color: #fff8dc;
-            margin-bottom: 20px;
         }
-        
+
         h3 {
-            font-family: 'Merriweather', serif; /* Elegant serif font */
-            font-size: 24px;
             text-transform: uppercase; /* Makes text uppercase */
             color: #ffd700; /* Gold color */
             margin-bottom: 10px;
-        }
-
-        h3, p {
-            margin: 20px 0;
         }
 
         p {
@@ -73,27 +68,24 @@
             font-style: italic;
         }
 
-        .ganesh-image {
-            position: absolute;
-            top: 20px;
-            width: 80px;
-            height: 80px;
-            z-index: 10;
-        }
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 50px; /* Smaller font size for mobile */
+            }
 
-        .left-ganesh {
-            left: 20px;
-        }
+            .program {
+                width: 90%; /* Adjust width for mobile */
+                padding: 15px;
+            }
 
-        .right-ganesh {
-            right: 20px;
+            p {
+                font-size: 18px; /* Slightly smaller text on mobile */
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Top Section with background image -->
-    <div class="top-section"></div>
-
     <!-- Content Section -->
     <div class="content">
         <h3>YOU'RE INVITED TO THE WEDDING OF</h3>
@@ -104,16 +96,16 @@
             <h3>Program Highlights</h3>
             <h4>Tuesday, 03rd December, 2024</h4>
             <p>1:00 PM - Baan</p>
-           <h4>Wednesday, 04th December, 2024</h4>	
+            <h4>Wednesday, 04th December, 2024</h4>    
             <p>7:00 PM - Mehndi</p>
             <p>8:00 PM - Ladies Sangeet</p>
-            <h4>Thursday, 05th December, 2024<h4>
+            <h4>Thursday, 05th December, 2024</h4>
             <p>6:00 PM  - Nanke (Bhat)</p>
             <p>8:00 PM  - Jaggo</p>
-            <h4>Friday, 06th December, 2024<h4>
+            <h4>Friday, 06th December, 2024</h4>
             <p>7:00 PM  - Reception</p>
             <p>7:30 PM  - Dinner</p>
-            <h4>Saturday, 7th December, 2024<h4>
+            <h4>Saturday, 7th December, 2024</h4>
             <p>Doli: Taaron Ki Chhaon Mein </p>
             <p><b>Venue:</b><br>Virsa Banquet Hall<br>Bangran Road, Shubh Khera<br>Paonta Sahib, H.P.</p>
         </div>
@@ -124,4 +116,3 @@
     </div>
 </body>
 </html>
-
