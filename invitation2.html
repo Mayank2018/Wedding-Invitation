@@ -9,71 +9,52 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Merriweather', serif;
-            background: url('ganesh.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff8dc;
+            font-family: 'Merriweather', serif; /* Elegant serif font */
+            background: url('ganesh.jpg') no-repeat center center fixed; /* Add your background image URL */
+            background-size: cover; /* Ensures the image covers the screen */
+            color: #fff8dc; /* Creamy white text for contrast */
             text-align: center;
             position: relative;
         }
 
-        /* Ganesh image styling */
-        .ganesh {
-            position: absolute;
-            width: 80px;
-            height: auto;
-            z-index: 10;
-        }
-
-        .ganesh.left {
-            top: 10px;
-            left: 10px;
-        }
-
-        .ganesh.right {
-            top: 10px;
-            right: 10px;
-        }
-
-        /* Content styles */
+        /* Ensure content visibility over background */
         .content {
             position: relative;
             z-index: 2;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: #fff8dc;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for text readability */
+            color: #fff8dc; /* Creamy white text for contrast */
             padding: 20px;
         }
 
         h1 {
-            font-family: 'Great Vibes', cursive;
+            font-family: 'Great Vibes', cursive; /* Script font for names */
             font-size: 80px;
-            color: #ffd700;
-            text-shadow: 3px 3px 5px #8b0000;
+            color: #ffd700; /* Gold-like color for the main title */
+            text-shadow: 3px 3px 5px #8b0000; /* Subtle shadow for depth */
             margin-bottom: 20px;
         }
 
         h2, h3 {
-            font-family: 'Merriweather', serif;
+            font-family: 'Merriweather', serif; /* Elegant serif font */
             color: #fff8dc;
         }
 
         h3 {
-            margin-top: 120px; /* Space to avoid overlap */
-            font-size: 28px;
-            text-transform: uppercase;
-            color: #ffd700;
+            text-transform: uppercase; /* Makes text uppercase */
+            color: #ffd700; /* Gold color */
+            margin-bottom: 10px;
         }
 
         p {
-            font-family: 'Dancing Script', cursive;
+            font-family: 'Dancing Script', cursive; /* Wedding-style script font */
             font-size: 20px;
             line-height: 1.8;
-            color: #f5deb3;
+            color: #f5deb3; /* Wheat color for a soft touch */
         }
 
         .program {
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 2px solid #ffd700;
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent white for background */
+            border: 2px solid #ffd700; /* Gold border */
             border-radius: 15px;
             padding: 20px;
             margin: 30px auto;
@@ -90,34 +71,21 @@
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             h1 {
-                font-size: 50px;
-            }
-
-            h3 {
-                font-size: 22px; /* Adjust font size for mobile */
-                margin-top: 140px; /* Extra space for small screens */
+                font-size: 50px; /* Smaller font size for mobile */
             }
 
             .program {
-                width: 90%;
+                width: 90%; /* Adjust width for mobile */
                 padding: 15px;
             }
 
             p {
-                font-size: 18px;
-            }
-
-            .ganesh {
-                width: 60px; /* Smaller Ganesh images for mobile */
+                font-size: 18px; /* Slightly smaller text on mobile */
             }
         }
     </style>
 </head>
 <body>
-    <!-- Ganesh Images -->
-    <img src="Ganesh Ji.png" alt="Ganesh Left" class="ganesh left">
-    <img src="Ganesh Ji.png" alt="Ganesh Right" class="ganesh right">
-
     <!-- Content Section -->
     <div class="content">
         <h3>YOU'RE INVITED TO THE WEDDING OF</h3>
